@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Code Quiz</title>
+  <link rel="stylesheet" href="assets/Styles/.css">
+  <title>Coding Quiz</title>
 </head>
 
 <body>
@@ -12,13 +12,12 @@
   <h1>Coding Quiz Challenge</h1>
   
   <div class="start">
-    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by 10 seconds!</p>
+    <p>Answer the following code-related questions, to the best of your ability, within the time limit. Incorrect answers will penalize your time by 10 seconds</p>
     <button id="beginBtn" type="button" class="btn">Begin Quiz</button><br>
   </div>
    
   <main class="main">
 
-    <!--Quiz window-->
     <div id="gameCard" class="w3-container hide">
 
       <h2 class="timer">TIMER: </h2>
@@ -26,7 +25,7 @@
       <div id="card1" class="w3-card-4">
         
         <header class="w3-container w3-light-grey">
-          <h3 id="question">Question Goes HERE!</h3>
+          <h3 id="question"></h3>
         </header>
 
         <hr style="margin-top:0; border-color:transparent;">
@@ -60,7 +59,6 @@
 
     <button id="leaderBtn" type="button" class="btn">View High Scores</button><br>
 
-    <!--Player input window-->
     <div id="inputForm" class="w3-container hide">
 
       <h1>!! GAME OVER !!</h1>
@@ -74,7 +72,6 @@
 
     </div>
 
-    <!--High Score window-->
     <div id="scoreCard" class="w3-container hide">
 
       <div id="card2" class="w3-card-4">
@@ -87,7 +84,7 @@
         <div id="leaderBoard" class="w3-container" style="min-height: 275px"></div>
   
         <hr style="margin-top:0; border-color:transparent;">
-        <footer id="feedback2" class="w3-block w3-dark-grey">Thx for Playing</footer>
+        <footer id="feedback2" class="w3-block w3-dark-grey">Thanks for Playing</footer>
       </div>
 
       <button id="backBtn" type="button" class="btn">Go Back</button>
