@@ -1,103 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/Styles/.css">
-  <title>Coding Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/Styles/reset.css">
+    <link rel="stylesheet" href="./assets/Styles/.css">
+    <title>Code Quiz</title>
 </head>
-
 <body>
-
-  <h1>Coding Quiz Challenge</h1>
-  
-  <div class="start">
-    <p>Answer the following code-related questions, to the best of your ability, within the time limit. Incorrect answers will penalize your time by 10 seconds</p>
-    <button id="beginBtn" type="button" class="btn">Begin Quiz</button><br>
-  </div>
-   
-  <main class="main">
-
-    <div id="gameCard" class="w3-container hide">
-
-      <h2 class="timer">TIMER: </h2>
-
-      <div id="card1" class="w3-card-4">
-        
-        <header class="w3-container w3-light-grey">
-          <h3 id="question"></h3>
-        </header>
-
-        <hr style="margin-top:0; border-color:transparent;">
-
-        <div id="multipleChoice" class="w3-container">
-          <div class="questionLine">
-            <label id="mcA"></label>
-          </div><hr>
-
-          <div class="questionLine">
-            <label id="mcB"></label>
-          </div><hr>
-
-          <div class="questionLine">
-            <label id="mcC"></label>
-          </div><hr>
-
-          <div class="questionLine">
-            <label  id="mcD"></label>            
-          </div>
-
-        </div>
-
-        <hr style="margin-top:0; border-color:transparent;">
-
-        <footer id="feedback1" class="w3-block w3-dark-grey">Can you answer all the questions in time?</footer>
-
-      </div>
-      
-    </div>
-
-    <button id="leaderBtn" type="button" class="btn">View High Scores</button><br>
-
-    <div id="inputForm" class="w3-container hide">
-
-      <h1>!! GAME OVER !!</h1>
-    
-      <h2>You scored <span id="scoreBtn" class="btn">Score</span> points!</h2>
-        <form>
-          <label for="initialsBox">Enter Your Initials Here:</label><br>
-          <input id="initialsBox" type="text" maxlength="3"><br>
-          <input id="submitBtn" type="submit" class="btn">
-        </form>
-
-    </div>
-
-    <div id="scoreCard" class="w3-container hide">
-
-      <div id="card2" class="w3-card-4">
-        
-        <header class="w3-container w3-light-grey">
-          <h1>Top 10 High Scores</h1>
-        </header>
-
-        <hr style="margin-top:0; border-color:transparent;">
-        <div id="leaderBoard" class="w3-container" style="min-height: 275px"></div>
-  
-        <hr style="margin-top:0; border-color:transparent;">
-        <footer id="feedback2" class="w3-block w3-dark-grey">Thanks for Playing</footer>
-      </div>
-
-      <button id="backBtn" type="button" class="btn">Go Back</button>
-      <button id="clearBtn" type="button" class="btn">Clear High Score</button>
-
-    </div>
-    
-  </main>
-
-  <script src="./assets/scripts/questions.js"></script>
-  <script src="./assets/scripts/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  
+    <header>
+        <a id="scores">View High Scores</a>
+        <section id="timer">Time: 0 seconds</section>
+    </header>
+    <main id="container">
+        <h1 id="title">Coding Quiz</h1>
+        <section id="content">Answer the folling code-related questions to the best of your ability, within the given time limit. For every incorrect answer, your time will reduce by ten seconds. Good Luck!</section>
+        <button id="start">Start Quiz</button>
+    </main>
+    <footer id="answer"></footer>    
+    <script src="./assets/Scripts/script.js"></script>
 </body>
-
 </html>
