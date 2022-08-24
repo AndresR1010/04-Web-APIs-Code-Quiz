@@ -17,6 +17,8 @@ Once your quiz ends you will enter your initials and be taken to the high scvore
 
 ![Alt text](./assets/images/animation.gif)
 
+![Animation](https://user-images.githubusercontent.com/106942847/186327205-0502d221-a931-404d-9f64-a13d8b08cca3.gif)
+
 ## Features
 
 You can clear the high scores from the local storage.
